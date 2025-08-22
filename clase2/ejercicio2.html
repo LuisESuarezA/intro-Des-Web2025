@@ -23,24 +23,31 @@
 
     <h2>Formulario GET para busqueda avanzada en scryfall</h2>
 
-    <form action="https://scryfall.com/search?as=grid&order=name&" target="_blank">
-        <label for="header-search-field">Buscar en scryfall.com:</label>
-        <fieldset>
-            <legend>Busqueda avanzada</legend>
-            <input
-                type="text"
-                id="card-name"
-                name="q"
-                placeholder="Nombre de carta"
-                required
-            />
-            <input
-                type="text"
-                id="creature-type"
-                name="type"
-                placeholder="Tipo de creatura"
-                required
-            />
+    <form action="https://scryfall.com/search?" target="_blank">
+      <label for="header-search-field">Buscar en scryfall.com:</label>
+      <fieldset>
+        <legend>Inicio de sesión</legend>
+        <input
+            type="text"
+            id="as"
+            name="as"
+            value="grid"
+            required
+        />
+        <input
+            type="text"
+            id="order"
+            name="order"
+            value="name"
+            required
+        />
+        <input
+            type="text"
+            id="header-search-field"
+            name="q"
+            placeholder="Término de búsqueda"
+            required
+        />
         </fieldset>
         <button type="submit">Buscar</button>
     </form>
