@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rakdos, Lord of Riots - Return to Ravnica (RTR)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Banner. Esto lo ponemos fuera del header ya que es información complementaria -->
+    <div role="complementary" aria-label="Espacio de busqueda">
+      <p>
+        <a href="https://scryfall.com/" target="_blank" title="Go to Scryfall">https://scryfall.com/</a>
+      </p>
+    </div>
+
+    <!-- Header de la página. Suele incluir logotipo, título, navegación principal -->
+    <header id="inicio">
+      <a href="https://scryfall.com/" target="_blank" title="Go to Scryfall">https://scryfall.com/</a>
+        <img
+        src="data:image/jpeg;base64,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"
+        alt="Logo de Scryfall" width="5%"
+      />
+      <form action="https://scryfall.com/search?" target="_blank">
+      <label for="header-search-field"></label>
+      <input
+        type="text"
+        id="header-search-field"
+        name="q"
+        placeholder="Término de búsqueda"
+        required
+      />
+      <button type="submit">Buscar</button>
+    </form>
+
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="https://scryfall.com/advanced">Advanced</a></li>
+          <li>
+            <a
+              href="https://scryfall.com/docs/syntax"
+              >Syntax</a
+            >
+          </li>
+          <li><a href="https://scryfall.com/sets">Sets</a></li>
+          <li>
+            <a
+              href="https://scryfall.com/random"
+              >Random</a
+            >
+          </li>
+          <li><a href="https://scryfall.com/account/decks">Your decks</a></li>
+          <li><a href="https://scryfall.com/settings">Your account</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+      <section id="carta">
+        <img
+        src="https://cards.scryfall.io/large/front/0/4/04f3db71-802f-488c-b40d-ac90df2d660a.jpg?1562782015"
+        alt="Imagen de la carta Rakdos, Lord of Riots " width="30%"
+        />
+        <h1>Rakdos, Lord of Riots</h1>
+        <p>
+          Legendary Creature — Demon
+        </p>
+        <p>
+          You can’t cast Rakdos unless an opponent lost life this turn.
+
+          <br/>Flying, trample
+
+          <br/>Creature spells you cast cost {1} less to cast for each 1 life your opponents have lost this turn.
+        </p>
+        <p>
+          <strong>6/6</strong>
+        </p>
+        <p>
+            Watermark: <a href="https://scryfall.com/search?q=wm%3Arakdos" target="_blank" title="Go to Rakdos">Rakdos</a>
+        </p>
+        <p>
+            Ilustrated by: <a href="https://scryfall.com/search?q=a%3A%E2%80%9CVincent+Proce%E2%80%9D&unique=art" target="_blank" title="Go to Artist">Vincent Proce</a>
+        </p>
+        <p>         
+            <img
+            src="formatos.png"
+            alt="Logo de Scryfall" width="20%"
+            />
+        </p>
+      </section>
+
+      <section id="Toolbox and Selling sides">
+        <h2>Toolbox</h2>
+        <ul class="toolbox-links">
+            <li><a href="https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=card-detail-infinite-articles&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DRakdos%252C%2BLord%2Bof%2BRiots" 
+                target="_blank" 
+                title="Go to TCG Player Articles">TCGplayer articles about this card</a>
+            </li>
+            <li><a href="https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=card-detail-infinite-decks&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DRakdos%252C%2BLord%2Bof%2BRiots"
+                target="_blank" 
+                title="Go to TCG Player Decks">TCGplayer decks with this card</a>
+            </li>
+            <li><a href="https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Rakdos%2C+Lord+of+Riots"
+                target="_blank" 
+                title="Go to TCG Player Articles">Search MTGTop8 for this card</a>
+            </li>
+            <li><a href="https://www.moxfield.com/decks/public?filter=Rakdos%2C+Lord+of+Riots&utm_medium=card-detail-moxfield&utm_source=scryfall"
+                target="_blank" 
+                title="Go to TCG Player Articles">Moxfields decks with this card</a>
+            </li>
+            <li><a href="https://edhrec.com/route/?cc=Rakdos%2C+Lord+of+Riots"
+                target="_blank" 
+                title="Go to TCG Player Articles">Card analysis on EDHREC</a>
+            </li>
+            <li><a href="https://cubecobra.com/tool/card/04f3db71-802f-488c-b40d-ac90df2d660a"
+                target="_blank" 
+                title="Go to TCG Player Articles">Card stats on Cube Cobra</a>
+            </li>
+            <li><a href="https://tagger.scryfall.com/card/rtr/187"
+                target="_blank" 
+                title="Go to TCG Player Articles">Open on Scryfall Tagger</a>
+            </li>
+        </ul>
+        <h2>Buy this card</h2>
+        <ul class="sellplaces-links">
+            <li><a href="https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=card-detail-buy-nonfoil&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F66665%3Fpage%3D1"
+                target="_blank" 
+                title="Go to TCG Player Articles">Buy on TCGplayer</a>
+            </li>
+            <li><a href="https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=card-detail-buy-foil&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F66665%3FPrinting%3DFoil%26page%3D1"
+                target="_blank" 
+                title="Go to TCG Player Articles">Buy foil on TCGplayer</a>
+            </li>
+            <li><a href="https://www.cardmarket.com/en/Magic/Products?idProduct=258381&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall"
+                target="_blank" 
+                title="Go to TCG Player Articles">Buy on Cardmarket</a>
+            </li>
+            <li><a href="https://www.cardmarket.com/en/Magic/Products?idProduct=258381&isFoil=Y&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall"
+                target="_blank" 
+                title="Go to TCG Player Articles">Buy foil on Cardmarket</a>
+            </li>
+            <li><a href="https://www.cardhoarder.com/cards/46563?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+                target="_blank" 
+                title="Go to TCG Player Articles">Buy on Cardhoarder</a>
+            </li>
+        </ul>
+        <h2>Images and Data</h2>
+        <ul class="images-links">
+            <li><a href="https://cards.scryfall.io/png/front/0/4/04f3db71-802f-488c-b40d-ac90df2d660a.png?1562782015"
+                target="_blank" 
+                title="Go to TCG Player Articles">Download PNG image</a>
+            </li>
+            <li><a href="https://cards.scryfall.io/art_crop/front/0/4/04f3db71-802f-488c-b40d-ac90df2d660a.jpg?1562782015"
+                target="_blank" 
+                title="Go to TCG Player Articles">Download art crop</a>
+            </li>
+            <li><a href="https://api.scryfall.com/cards/04f3db71-802f-488c-b40d-ac90df2d660a?format=text&pretty=true"
+                target="_blank" 
+                title="Go to TCG Player Articles">Copy-pasteable text</a>
+            </li>
+            <li><a href="https://api.scryfall.com/cards/04f3db71-802f-488c-b40d-ac90df2d660a?format=json&pretty=true"
+                target="_blank" 
+                title="Go to TCG Player Articles">Copy-pasteable JSON</a>
+            </li>
+            <li><a href="https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=253532&printed=false"
+                target="_blank" 
+                title="Go to TCG Player Articles">View on Gatherer</a>
+            </li>
+            <li><a href="https://scryfall.com/contact?problem_uri=https%3A%2F%2Fscryfall.com%2Fcard%2Frtr%2F187%2Frakdos-lord-of-riots&title=Problem+with+Rakdos%2C+Lord+of+Riots+%28Return+to+Ravnica+%23187%29&topic=card"
+                target="_blank" 
+                title="Go to TCG Player Articles">Report card issue</a>
+            </li>
+        </ul>
+      </section>
+
+      <section id="card-rulings">
+        <!-- Notes and Rules Information -->
+        <h2>Notes and Rules Information for <a href="https://scryfall.com/card/rtr/187/rakdos-lord-of-riots#rulings" target="_blank" title="Go to Rakdos">RAKDOS, LORD OF RIOTS</a>:</h2>
+        <ul clas="rulings-item">
+            <li class="rulings-item">
+                Damage dealt to a player causes that player to lose that much life.
+                <span class="rulings-item-date">(2020-11-10)</span>
+            </li>
+            <li class="rulings-item">
+                Rakdos can be put onto the battlefield by another spell or ability even if no opponent has lost life that turn.
+                <span class="rulings-item-date">(2020-11-10)</span>
+            </li>
+            <li class="rulings-item">
+                Rakdos's last ability cares about the total life lost, not necessarily what an opponent's life total is compared to what it was at the beginning of the turn. For example, if an opponent loses 5 life and then gains 10 life in a turn, creature spells you cast will cost <abbr class="card-symbol card-symbol-5" title="five generic mana">{5}</abbr> less to cast.
+                <span class="rulings-item-date">(2020-11-10)</span>
+            </li>
+            <li class="rulings-item">
+                If an opponent lost life and subsequently lost the game, Rakdos's first ability is satisfied, and its last ability counts that loss of life.
+                <span class="rulings-item-date">(2020-11-10)</span>
+            </li>
+        </ul>
+         <ul clas="rulings-item">
+            <li class="rulings-item">
+                Rakdos's last ability can't reduce the colored mana requirement of a creature spell you cast.
+                <span class="rulings-item-date">(2020-11-10)</span>
+            </li>
+            <li class="rulings-item">
+                If there are additional costs to cast a creature spell, such as a kicker cost or the commander tax, apply those increases before applying cost reductions.
+                <span class="rulings-item-date">(2020-11-10)</span>
+            </li>
+            <li class="rulings-item">
+                Rakdos's last ability won't reduce the cost to cast Rakdos itself. It applies only to creature spells you cast once Rakdos is on the battlefield.
+                <span class="rulings-item-date">(2020-11-10)</span>
+            </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h3>Cards</h3>
+        <ul>
+          <li><a href="https://scryfall.com/advanced">Advanced Search</a></li>
+          <li><a href="https://scryfall.com/docs/syntax">Syntax Guide</a></li>
+          <li><a href="https://scryfall.com/sets">All Sets</a></li>
+          <li><a href="https://scryfall.com/random">Random Card</a></li>
+        </ul>
+        <h3>Scryfall</h3>
+        <ul>
+          <li><a href="https://scryfall.com/bots">Slack & Discord Bots</a></li>
+          <li><a href="https://scryfall.com/docs/faqs">Site FAQs & Help</a></li>
+          <li><a href="https://scryfall.com/blog">Scryfall Blog</a></li>
+          <li><a href="https://tagger.scryfall.com/">Scryfall Tagger</a></li>
+          <li><a href="https://mtg.wiki/">MTG Wiki</a></li>
+          <li><a href="https://artgame.scryfall.com/">Art Game</a></li>
+        </ul>
+        <h3>Account</h3>
+        <ul>
+          <li><a href="https://scryfall.com/settings/profile">Your Account</a></li>
+          <li><a href="https://scryfall.com/register">Register</a></li>
+          <li><a href="https://scryfall.com/docs/terms">Terms of Service</a></li>
+          <li><a href="https://scryfall.com/contact">Contact US</a></li>
+          <li><a href="https://scryfall.com/docs/privacy">Privacy & Security</a></li>
+        </ul>
+        <h3>Developers</h3>
+        <ul>
+          <li><a href="https://scryfall.com/docs/api">API Documentation</a></li>
+          <li><a href="https://scryfall.com/docs/api/cards">Card Objects</a></li>
+          <li><a href="https://scryfall.com/docs/api/images">Card Imagery</a></li>
+          <li><a href="https://scryfall.com/docs/api/bulk-data">Bulk Data</a></li>
+          <li><a href="https://scryfall.com/blog/category/api">API Changelog</a></li>
+        </ul>
+        <h3>More</h3>
+        <ul>
+          <li><a href="https://scryfall.com/donate">Donate to Scryfall</a></li>
+          <li><a href="https://www.patreon.com/scryfall">Patreon</a></li>
+          <li><a href="https://bsky.app/profile/scryfall.com">Bluesky</a></li>
+          <li><a href="https://github.com/scryfall">GitHub</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>
+          <small>
+            Portions of Scryfall are unofficial Fan Content permitted under the Wizards of the Coast Fan Content Policy. The literal and graphical information presented on this site about Magic: The Gathering, including card images and mana symbols, is copyright Wizards of the Coast, LLC. Scryfall is not produced by or endorsed by Wizards of the Coast.
+        </small>
+        </p>
+        <p>
+          <small>
+            The Slack, Discord, Cash App, PayPal, and Patreon logos are copyright their respective owners. Scryfall is not produced by or endorsed by these services.
+        </small>
+        </p>
+        <p>
+          <small>
+            Card prices and promotional offers represent daily estimates and/or market values provided by our affiliates. Absolutely no guarantee is made for any price information. See stores for final prices and details.
+        </small>
+        </p>
+        <p>
+          <small>
+            All other content © 2025 Scryfall, LLC. 
+        </small>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
