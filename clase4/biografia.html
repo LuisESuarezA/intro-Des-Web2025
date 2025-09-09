@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Pablo Milanés — Vida y Obra</title>
+
+  <style>
+    body { font-family: Arial; margin: 0; background: #dfe3e8; color: #000000; }
+    h1, h2, h3 { margin: 0 0 8px; }
+
+    .container { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+    .subrayado { text-decoration: underline; }
+    .nav-bar { background: #2d4054; }
+    .nav-list { display: flex; gap: 16px; list-style: none; padding: 12px 0; margin: 0; }
+    .nav-link { color: white; text-decoration: none; padding: 6px 10px; border-radius: 6px; }
+    .nav-link:hover { background: #d0d6dc; }
+
+    header .hero { display: grid; grid-template-columns: 120px 1fr; gap: 16px; align-items: center; padding: 16px 0; }
+    .avatar { width: 120px; height: 120px; object-fit: cover; border-radius: 12px; border: 3px solid #1e2a38; box-shadow: 0 4px 10px rgba(0,0,0,.2); }
+    .tag { background: #00f7ff; padding: 2px 6px; border: 1px dotted #7bdaf9; border-radius: 4px; }
+
+    .card { background: white; padding: 16px; margin: 16px 0; border: 1px solid #ddd; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,.08); }
+    .grid { display: grid; gap: 16px; }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+    .btn { background: #1e2a38; color: #fff; border: 2px solid #1e2a38; padding: 10px 14px; border-radius: 10px; cursor: pointer; }
+    .btn:hover { background: #314559; }
+
+    .ext-links a { color: #1e2a38; }
+    .ext-links a:hover { text-decoration: underline; }
+
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .gallery img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; border: 3px solid #fff; box-shadow: 0 3px 6px rgba(0,0,0,.15); }
+
+    footer { background: #1e2a38; color: #fff; padding: 16px 0; margin-top: 24px; }
+    footer a { color: #cfe3ff; }
+
+    #destacado { background: #eef7ff; border-left: 6px solid #1e2a38; padding: 10px 12px; border-radius: 8px; }
+
+    @media (max-width: 700px) {
+      main { background: #fff3e6; } 
+      .gallery { grid-template-columns: repeat(2, 1fr); }
+      header .hero { grid-template-columns: 90px 1fr; }
+      .avatar { width: 90px; height: 90px; }
+    }
+    @media (max-width: 400px) {
+      .hide-on-small { display: none; } 
+      .gallery { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 300px) {
+      main { background: #e8f7f1; } 
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <div class="container">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#vida">Vida</a></li>
+        <li><a class="nav-link" href="#obra">Obra</a></li>
+        <li><a class="nav-link" href="#discografia">Discografía</a></li>
+        <li><a class="nav-link" href="#galeria">Galería</a></li>
+        <li><a class="nav-link" href="#contacto">Contacto</a></li>
+        <li><a class="nav-link" href="https://es.wikipedia.org/wiki/Pablo_Milan%C3%A9s" target="_blank">Wikipedia</a></li>
+        <li><a class="nav-link" href="https://tidal.com/artist/35825" target="_blank">Tidal</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container hero">
+      <img class="avatar" src="retrato.jpeg" alt="Portada de Proposiciones" />
+      <div>
+        <h1>Pablo Milanés</h1>
+        <p class="subrayado"><span class="tag">Cantautor cubano</span> • Nueva Trova • Poeta musical</p>
+        <p id="destacado">“No hagas caso, digan lo que digan defiende el amor que te enseñó qué hermosa es la vida.”.</p>
+      </div>
+    </div>
+    <hr />
+  </header>
+
+  <main class="container">
+    <section id="vida" class="card">
+      <h2>Vida</h2>
+      <article>
+        <p>
+          Pablo Milanés (1943–2022) fue un <span>cantautor fundamental</span> de la música latinoamericana.
+          Nacido en Bayamo, Cuba, se convirtió en una de las voces más influyentes del movimiento de la
+          <strong>Nueva Trova</strong>, combinando poesía, amor y compromiso social.
+        </p>
+      </article>
+    </section>
+
+    <section id="obra" class="card">
+      <h2>Obra y legado</h2>
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Temas representativos</h3>
+          <ul>
+            <li>“Yo pisaré las calles nuevamente”</li>
+            <li>“El breve espacio en que no estás”</li>
+            <li>“Para vivir”</li>
+            <li>“Yolanda”</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Aportaciones</h3>
+          <ol>
+            <li>Renovación de la canción de autor en español.</li>
+            <li>Puente entre poesía y música popular.</li>
+            <li>Colaboraciones con figuras de toda Iberoamérica.</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <section id="discografia" class="card">
+      <h2>Discografía (selección)</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Álbumes</h3>
+          <ul>
+            <li><em>Buenos Días América</em> (1987)</li>
+            <li><em>El guerrero</em> (1983)</li>
+            <li><em>Despertar</em> (1997)</li>
+            <li><em>Comienzo y Final de Una Verde Mañana</em> (1984)</li>
+            <li><em>Yo Me Quedo</em> (1982)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Colaboraciones</h3>
+          <p>Trabajó con Silvio Rodríguez, Fito Páez, Joaquín Sabina, y muchos más.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="card">
+      <h2>Galería</h2>
+      <div class="gallery">
+        <img src="pablo_guitarra.jpeg" alt="Pablo Milanés cantando en concierto con guitarra"/>
+        <img src="Silvio-y-Pablo.jpg" alt="Silvio Rodríguez y Pablo Milanés en conferencia de prensa" />
+        <img src="pablo_en_vivo.jpg" alt="Pablo Milanés en vivo ante el público" />
+      </div>
+    </section>
+
+    <section id="contacto" class="card">
+      <h2>Contacto / Comentarios</h2>
+      <p>Cuentame sobre tu canción favorita de Pablo.</p>
+      <form action="#" method="post">
+        <div class="card" style="border-style: dotted;">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" />
+        </div>
+        <div class="card">
+          <label for="cancion">Canción favorita:</label>
+          <input type="text" name="cancion" id="cancion" placeholder="Ej. Yolanda" />
+        </div>
+        <div class="card">
+          <label for="email">Correo:</label>
+          <input type="email" name="email" id="email" placeholder="tucorreo@ejemplo.com" />
+        </div>
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+      <p class="ext-links" style="text-align:center; margin-top:10px;">
+        También puedes visitar <a href="https://www.youtube.com/results?search_query=Pablo+Milan%C3%A9s" target="_blank" rel="noopener">videos en YouTube</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p style="text-align:center;">
+        <a href="#vida">Volver arriba</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
