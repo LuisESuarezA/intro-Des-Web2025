@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="'es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Llamada con fetch</title>
+        <script>
+            function obtenerInformacion() {
+                console.log("Llamada a servidor");
+                const URL = 
+                    "https://www.itam.mx/";
+                fetch(URL)
+                    .then((response) => response.json())
+                    .then((data) => console.log(data))
+                    .catch(function (error) {
+                        console.log(
+                            "Hubo un problema con la función Fecth: " + error.message
+                        );
+                    });
+            }
+        </script>
+    </head>
+</html>
